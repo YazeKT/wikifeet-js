@@ -1,0 +1,12 @@
+const wikifeet = require('wikifeet-js');
+
+async function main() {
+    let pokimane = (https://www.wikifeet.com/Selena_Gomez('pokimane'))[0];
+    let pics = await wikifeet.getImages(pokimane);
+
+    let random = 0 | (pics.length * Math.random());
+
+    console.log(`Pokimane feet pic of the day: ${pics[random]}`);    
+}
+
+main();
